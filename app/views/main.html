@@ -1,7 +1,25 @@
+
+
+
+
 <div class="jumbotron">
-  <h1>Welcome to the AngularQuiz</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-Please enter your email address  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Start</a></p>
+  <strong>Welcome</strong> {{firstName}}<br />
+  <h1>AngularQuiz</h1>
+  <p class="lead">Please enter your email address  </p>
+
+
+
+      <body ng-app ng-init="firstName = 'John'; lastName = 'Doe';">
+      <br />
+      <label>Email address <input type="text" ng-model="firstName"/></label><br />
+      <p><a class="btn btn-lg btn-success" ng-href="/#/question1">Start</a></p>
+      </body>
+
+      </div>
+
+
+
 </div>
+
+
+
