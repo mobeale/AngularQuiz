@@ -9,11 +9,6 @@
  */
 angular.module('angularQuizApp')
   .controller('AboutCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
 
     $scope.question = {
       q1: 'What is your favorite fruit?',
