@@ -12,34 +12,6 @@
 angular.module('angularQuizApp')
 
 
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  })
-
-  .factory('StorageService',[
-    function(){
-
-      var _name = "";
-
-      var _setName  = function(name){
-        _name = name;
-        return "Let's start the quiz!";
-      };
-
-      var _getName = function(){
-        return _name;
-      };
-
-      return {
-        setName : _setName,
-        getName : _getName
-      };
-
-    }])
 
   .controller('MainCtrl', ['$scope','$route', '$location',"StorageService",
     function($scope, $route, $location, StorageService) {
@@ -57,6 +29,27 @@ angular.module('angularQuizApp')
       };
 
     }])
+
+  .factory('StorageService',[
+     function(){
+
+    var _name = "Stranger";
+
+    var _setName  = function(name){
+      _name = name;
+      return "Let's start the quiz!";
+    };
+
+    var _getName = function(){
+      return _name;
+    };
+
+    return {
+      setName : _setName,
+      getName : _getName
+    };
+
+  }])
 
 
 

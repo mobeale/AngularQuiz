@@ -2,7 +2,7 @@
 
 <div class="jumbotron">
 
-  <div ng-controller="MainCtrl">
+  <div ng-controller="MainCtrl" ng-show="name">
     <p> Hello</p> <p style="color:#673AB7">{{name}}</p>
   </div>
 
@@ -10,6 +10,9 @@
   <h1>Question 2</h1>
 
   <p>{{question.q2}}</p>
+
+  <a  ng-href="/#/question3"><button class="btn btn-material-red">{{answer.q2a}}</button></a>
+  <a  ng-href="/#/question3"><button class="btn btn-material-blue">{{answer.q2b}}</button></a>  <!--
  <div class="checkbox" style="display: inline">
     <label>
       <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> {{answer.q2a}}
@@ -20,6 +23,8 @@
       <input type="checkbox"><span class="checkbox-material"><span class="check"></span></span> {{answer.q2b}}
     </label>
   </div>
+
+  -->
   <div style="padding:10px">
     <p><a class="btn btn-material-deep-purple" ng-href="/#/question3">Next</a></p>
 
