@@ -3,9 +3,12 @@
 
 <div class="jumbotron">
 
-  <div ng-controller='MainCtrl'>
+  <div ng-controller="MyController">
+    <p> Hello {{StorageService.setName}}</p>
 
-    <p>Hello {{email.add}}</p> </div>
+
+  </div>
+
   <h1>Question 1</h1>
 
 <p>{{question.q1}}</p>
@@ -23,7 +26,7 @@
 
 
  <div style="padding:10px">
-   <p><a class="btn btn-material-deep-purple" ng-href="/#/question2">Next</a></p>
+   <p><a class="btn btn-material-deep-purple"  ng-href="/#/question2">Next</a></p>
 
 
  </div>

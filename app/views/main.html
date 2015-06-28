@@ -2,28 +2,35 @@
 
 
 
-<div class="jumbotron" ng-controller='MainCtrl'>
-  <p>Hello</p> <p style="color:#673AB7">{{greeting.email}} </p><br />
+<div class="jumbotron" ng-controller='MyController'>
+
+  <p>Hello</p>
+  <p style="color:#673AB7">   {{StorageService.setName}} </p>
+  <br />
+
   <p> Welcome to the </p>
+
   <h1>AngularQuiz</h1>
+
+
+
   <p class="lead">Please enter your email address  </p>
 
 
 
- <!-- <body ng-app ng-init="firstName = 'John';">
-  <br />
-  <label>Email address <input type="email" ng-model="firstName"/></label><br /> -->
   <div class="form-group">
-
     <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2" style="padding-top: 20px; padding-bottom: 20px">
-      <input ng-model='greeting.email' type="email" class="form-control" id="inputEmail" placeholder="Email" style="font-size: 2  0px">
+      <input ng-model='StorageService.setName' type="email" class="form-control" id="inputEmail" placeholder="Email" style="font-size: 20px">
+
+
+
     </div>
   </div>
 
 
 
-  <p><a class="btn btn-material-deep-purple" ng-href="/#/question1">Start</a></p>
-  </body>
+   <p><a class="btn btn-material-deep-purple" ng-href="/#/question1">Start</a></p>
+
 
 </div>
 
