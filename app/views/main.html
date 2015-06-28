@@ -2,11 +2,22 @@
 
 
 
-<div class="jumbotron" ng-controller='MyController'>
+<div class="jumbotron" ng-controller='MainCtrl'>
 
-  <p>Hello</p>
-  <p style="color:#673AB7">   {{StorageService.setName}} </p>
+  <!--<p>Hello</p>
+  <p style="color:#673AB7">   {{StorageService.setName}} </p>-->
+
+
   <br />
+
+
+
+  <div>
+    <p>Hello {{name}}</p>
+
+  </div>
+
+
 
   <p> Welcome to the </p>
 
@@ -14,29 +25,45 @@
 
 
 
-  <p class="lead">Please enter your email address  </p>
+
+  <div>
+    <form ng-submit="saveMyName(myName)" >
+      <label> Enter email :
+        <input type="email" name="input" ng-model="myName">
+      </label>
+      <button type="submit" ng-href>Submit</button>
+    </form>
+
+    <br/>
+    <div>{{valueReturned}}</div>
 
 
 
-  <div class="form-group">
-    <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2" style="padding-top: 20px; padding-bottom: 20px">
-      <input ng-model='StorageService.setName' type="email" class="form-control" id="inputEmail" placeholder="Email" style="font-size: 20px">
 
 
 
+  <!-- <p class="lead">Please enter your email address  </p>
+
+   <div class="form-group">
+     <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2" style="padding-top: 20px; padding-bottom: 20px">
+       <input ng-model='StorageService.setName' type="email" class="form-control" id="inputEmail" placeholder="Email" style="font-size: 20px">
+
+
+ -->
     </div>
-  </div>
+
 
 
 
    <p><a class="btn btn-material-deep-purple" ng-href="/#/question1">Start</a></p>
 
-
 </div>
 
 
 
-</div>
+  <!-- basic two way binding -->
+
+
 
 
 
