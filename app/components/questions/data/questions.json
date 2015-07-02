@@ -1,0 +1,46 @@
+{
+  "questions":[
+    {
+      "questionId":"1",
+      "text":"What is your favorite fruit",
+        "answers":[
+        {
+          "answerId":1,
+          "text":"Oranges"
+        },
+        {
+          "answerId":2,
+          "text":"Bananas"
+        }
+      ]
+    },
+    {
+      "questionId":"2",
+      "text":"What is your favourite colour?",
+      "answers":[
+        {
+          "answerId":1,
+          "text":"Red"
+        },
+        {
+          "answerId":2,
+          "text":"Blue"
+        }
+      ]
+    },
+    {
+      "questionId":"3",
+      "text":"How did you find this site",
+      "answers":[
+        {
+          "answerId":1,
+          "text":"Facebook"
+        },
+        {
+          "answerId":2,
+          "text":"Google"
+        }
+      ]
+    }
+  ]
+}

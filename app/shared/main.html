@@ -2,7 +2,7 @@
 
 
 
-<div class="jumbotron" ng-controller='MainCtrl'>
+<div class="jumbotron">
 
   <!--<p>Hello</p>
   <p style="color:#673AB7">   {{StorageService.setName}} </p>-->
@@ -13,7 +13,7 @@
 
 
   <div ng-show="name">
-    <p> Hello, <span style="color:#673AB7">{{name}}</span></p>
+    <p> Hello, <span style="color:#673AB7">{{name}}</span>
   </div>
 
 
@@ -32,7 +32,7 @@
       <label>
         <input ng-model='myName' ng-required="true" type="email" name="input" class="form-control"  style="font-size: 20px">
       </label>
-      <button type="submit" class="" ng-href="/#/question1">Submit</button>
+      <button type="submit" class="btn btn-primary btn-xs" >Submit</button>
     </form>
 
     <br/>
@@ -56,13 +56,14 @@
 
 
 
-   <p><a class="btn btn-material-deep-purple" ng-href="/#/question1">Start Quiz</a></p>
+   <p><a class="btn btn-raised btn-primary" ng-href="/#/question">Start Quiz</a></p>
 
 </div>
 
 
 
   <!-- basic two way binding -->
+
 
 
 

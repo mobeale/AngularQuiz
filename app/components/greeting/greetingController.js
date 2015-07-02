@@ -13,7 +13,7 @@ angular.module('angularQuizApp')
 
 
 
-  .controller('MainCtrl', ['$scope','$route', '$location',"StorageService",
+  .controller('greetCtrl', ['$scope','$route', '$location',"StorageService",
     function($scope, $route, $location, StorageService) {
 
       $scope.name = StorageService.getName();
@@ -28,31 +28,4 @@ angular.module('angularQuizApp')
         $scope.name = StorageService.getName();
       };
 
-    }])
-
-  .factory('StorageService',[
-     function(){
-
-    var _name = "Stranger";
-
-    var _setName  = function(name){
-      _name = name;
-      return "Let's start the quiz!";
-    };
-
-    var _getName = function(){
-      return _name;
-    };
-
-    return {
-      setName : _setName,
-      getName : _getName
-    };
-
-  }])
-
-
-
-
-
-
+    }]);
