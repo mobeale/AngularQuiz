@@ -12,7 +12,7 @@ angular.module('angularQuizApp')
 
       $scope.currentQuestion = 0;
       $scope.processQuestion = function(questionId, answerId){
-        console.log("QuestionController Log: Here it is" + " Question " + questionId + " Answer " + answerId + "\n");
+        //console.log("QuestionController Log: Here it is" + " Question " + questionId + " Answer " + answerId + "\n");
       Counter.incrementCount(questionId, answerId);
 
         $scope.currentQuestion++;
