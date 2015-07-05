@@ -29,6 +29,8 @@ angular.module('angularQuizApp')
         var result = StorageService.setName($scope.myName);
         $scope.valueReturned = angular.copy(result);
         QuestionTimer.startTimer();
+        $location.path('/question');
+
         return true;
       }
 

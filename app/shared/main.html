@@ -26,28 +26,29 @@
 
 
 
-    <form ng-submit="startQuiz()" name="nameForm" action="/#/question">
+  <form name="nameForm" method="post" ng-submit="startQuiz()" >
 
-      <p>Please enter your email address below </p>
-
-
-
-      <label>
-        <input ng-model='myName' ng-required="true" type="email" name="input" class="form-control"  style="font-size: 15px">
-      </label>
+    <p>Please enter your email address below </p>
 
 
-      <div class="row">
-        <div class="col-md-8-offset-2">
-     <button type="submit" class="btn btn-raised btn-primary" > Start </button>
-          </div>
+
+    <label>
+      <input ng-model='myName' ng-required="true" type="email" name="input" class="form-control"  style="font-size: 15px">
+    </label>
+
+
+    <div class="row">
+      <div class="col-md-8-offset-2">
+        <button name="submit" class="btn btn-primary">Go</button>
+
       </div>
+    </div>
 
 
-      <!--<p><a class="btn btn-raised btn-primary" ng-href="/#/question">Start Quiz</a></p>-->
-    </form>
+    <!--<p><a class="btn btn-raised btn-primary" ng-href="/#/question">Start Quiz</a></p>-->
+  </form>
 
-  <button class="btn btn-primary" ng-click="startQuiz()"></button>
+  <!--<button class="btn btn-primary" ng-click="startQuiz()"></button>-->
 
 
   <br/>

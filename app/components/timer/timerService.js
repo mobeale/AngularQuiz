@@ -20,6 +20,8 @@ angular.module('angularQuizApp')
       };
 
       var _startTimer = function(){
+        _currentPercentage = 0;
+        _currentTime = 30;
       console.log("Timer is go");
         $interval(function(){
 
