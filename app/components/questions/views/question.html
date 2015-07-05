@@ -4,14 +4,9 @@
 <div class="jumbotron">
 
   <div ng-controller="greetCtrl">
-    <p> Hello, <span style="color:#673AB7">{{name}}</span>
+    <p style="padding-left: 50px"> Hello, <span style="color:#673AB7">{{name}}</span>   <button class="btn btn-fab btn-raised btn-primary" style="float: right">{{currentTime}}</button>
+
   </div>
-
-
-<div class="">
-  <h4>Timer</h4>
-  <button class="btn btn-fab btn-raised btn-primary">{{currentTime}}</button>
-</div>
 
 
 
@@ -19,9 +14,10 @@
 
 
 
-  <h1>Question {{data.questions[currentQuestion].questionId}}</h1>
+  <h1  style="padding-left: 70px">Question {{data.questions[currentQuestion].questionId}}</h1>
 
-      <p>{{data.questions[currentQuestion].text}}</p>
+
+      <p style="padding-left: 3px">{{data.questions[currentQuestion].text}}</p>
 
           <div ng-repeat="answer in data.questions[currentQuestion].answers">
 
