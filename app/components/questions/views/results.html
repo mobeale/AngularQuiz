@@ -1,0 +1,46 @@
+
+
+<div class="jumbotron">
+  <h1> Results</h1>
+  <p><i>Compare your answers!</i></p>
+
+  <div class="row">
+  <div ng-repeat="question in data.questions" class="col-sm-4 col-md-4 col-lg-4">
+
+  <h2>Question {{question.questionId}}</h2>
+
+
+
+
+  <div ng-repeat="answer in question.answers">
+
+    <p>{{answer.text}}: <strong>{{counts[question.questionId][answer.answerId]}}</strong></p>
+  </div>
+
+  </div>
+
+</div>
+
+
+<div ng-controller="QuestionCtrl">
+  <p><a class="btn btn-raised btn-primary" ng-href="/#/main">Restart</a></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+

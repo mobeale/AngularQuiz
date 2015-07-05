@@ -8,6 +8,15 @@
   </div>
 
 
+<div class="">
+  <h4>Timer</h4>
+  <button class="btn btn-fab btn-raised btn-primary">{{currentTime}}</button>
+</div>
+
+
+
+
+  <h1>timer:{{currentTime}}</h1>
 
 
   <h1>Question {{data.questions[currentQuestion].questionId}}</h1>
@@ -19,14 +28,14 @@
             <p><a class="btn btn-primary"  ng-click="processQuestion(data.questions[currentQuestion].questionId, answer.answerId)"  > {{answer.text}} </a></p>
 
           </div>
+
+
+  <progress-component ng-controller="ProgressController"></progress-component>
+
+
+
 </div>
 
 
 
 
-
-<div class="progress">
-  <div class="progress-bar progress-bar-material-deep-purple active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-    <span class="sr-only">45% Complete</span>
-  </div>
-</div>

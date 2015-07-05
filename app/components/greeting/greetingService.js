@@ -8,7 +8,7 @@ angular.module('angularQuizApp')
 
     var _setName  = function(name){
       _name = name;
-      return "Let's start the quiz!";
+      return "Awesome, thanks! Now let's start the quiz!";
     };
 
     var _getName = function(){

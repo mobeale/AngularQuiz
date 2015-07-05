@@ -32,18 +32,25 @@ angular
         controller: ''
       })
       .when('/question/', {
-        templateUrl: 'components/questions/question.html',
+        templateUrl: 'components/questions/views/question.html',
         controller: 'QuestionCtrl'
 
       })
       .when('/results', {
-        templateUrl: 'components/questions/results.html',
-        controller: 'resultsCtrl'
+        templateUrl: 'components/questions/views/results.html',
+        controller: 'ResultsCtrl'
+
+      })
+
+      .when('/timeup', {
+        templateUrl: 'shared/timeUp.html'
 
       })
       .otherwise({
         redirectTo: '/'
       });
+
+
 
 
 

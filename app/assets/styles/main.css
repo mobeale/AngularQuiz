@@ -81,3 +81,14 @@ body {
     border-bottom: 0;
   }
 }
+
+.ng-invalid.ng-dirty {
+  color: #c21d1f;
+
+}
+
+.ng-valid.ng-dirty {
+
+  color: #46c773;
+
+}
