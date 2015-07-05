@@ -26,7 +26,7 @@
 
 
 
-    <form ng-submit="startQuiz() && nameForm.$valid" name="nameForm" action="/#/question">
+    <form ng-submit="startQuiz()" name="nameForm" action="/#/question">
 
       <p>Please enter your email address below </p>
 
@@ -47,7 +47,10 @@
       <!--<p><a class="btn btn-raised btn-primary" ng-href="/#/question">Start Quiz</a></p>-->
     </form>
 
-    <br/>
+  <button class="btn btn-primary" ng-click="startQuiz()"></button>
+
+
+  <br/>
     <div>{{valueReturned}}</div>
 
     <!-- <div> nameForm is {{nameForm.$valid}}</div>

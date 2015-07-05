@@ -15,8 +15,8 @@
 
 
 
+  <!-- <h1>timer:{{currentTime}}</h1>-->
 
-  <h1>timer:{{currentTime}}</h1>
 
 
   <h1>Question {{data.questions[currentQuestion].questionId}}</h1>
@@ -28,6 +28,7 @@
             <p><a class="btn btn-primary"  ng-click="processQuestion(data.questions[currentQuestion].questionId, answer.answerId)"  > {{answer.text}} </a></p>
 
           </div>
+
 
 
   <progress-component ng-controller="ProgressController"></progress-component>
