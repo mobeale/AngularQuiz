@@ -8,6 +8,8 @@
  *
  * Main module of the application.
  */
+
+
 angular
   .module('angularQuizApp', [
     'ngAnimate',
@@ -15,7 +17,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'progressModule'
 
   ])
 
@@ -24,7 +27,7 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'shared/main.html',
+        templateUrl: 'components/greeting/main.html',
         controller: 'greetCtrl'
       })
       .when('/about', {
@@ -43,7 +46,7 @@ angular
       })
 
       .when('/timeup', {
-        templateUrl: 'shared/timeUp.html'
+        templateUrl: 'components/timer/timeUp.html'
 
       })
       .otherwise({

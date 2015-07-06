@@ -6,7 +6,7 @@
 
 .factory('Questions', ['$resource',
   function($resource){
-    return $resource('components/questions/data/questions.json', {}, {
+    return $resource('components/questions/data/questions.json', {}, {    // retrieving the questions from JSON file
 
     });
 

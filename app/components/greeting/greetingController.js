@@ -12,24 +12,23 @@
 angular.module('angularQuizApp')
 
 
-
-  .controller('greetCtrl', ['$scope','$route', '$location',"StorageService", 'QuestionTimer',
-    function($scope, $route, $location, StorageService, QuestionTimer) {
+  .controller('greetCtrl', ['$scope', '$route', '$location', "StorageService", 'QuestionTimer', //new controller for greeting & initiating timer/quiz
+    function ($scope, $route, $location, StorageService, QuestionTimer) {
 
       $scope.name = StorageService.getName();
 
       $scope.valueReturned = "";
 
-        //Update name to the view
-        $scope.name = StorageService.getName();
+
+      $scope.name = StorageService.getName();    //Update name to the view
 
 
-      $scope.startQuiz = function(){
-        console.log("Time is started");
-        var result = StorageService.setName($scope.myName);
-        $scope.valueReturned = angular.copy(result);
-        QuestionTimer.startTimer();
-        $location.path('/question');
+      $scope.startQuiz = function () {                         // startQuiz function attached to scope
+        console.log("Time is started");                       // console.log for debugging
+        var result = StorageService.setName($scope.myName);  // attach name to scope
+        $scope.valueReturned = angular.copy(result);        // copy value returned
+        QuestionTimer.startTimer();                        // execute timer function
+        $location.path('/question');                      // initiate questions
 
         return true;
       }
