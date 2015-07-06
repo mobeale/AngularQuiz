@@ -23,7 +23,6 @@ angular
   ])
 
 
-
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -52,11 +51,6 @@ angular
       .otherwise({
         redirectTo: '/'
       });
-
-
-
-
-
 
 
   });

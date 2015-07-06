@@ -24,7 +24,6 @@ angular.module('angularQuizApp')
         $scope.currentQuestion++;
 
 
-
         if ($scope.currentQuestion >= $scope.data.questions.length) {
 
           QuestionTimer.stopTimeout();
