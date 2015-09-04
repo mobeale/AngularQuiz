@@ -18,7 +18,8 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
-    'progressModule'
+    'progressModule',
+    'angular-tour'
 
   ])
 
